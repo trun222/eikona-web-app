@@ -2,77 +2,97 @@
   <div class="subscriptions">
     <v-container class="mt-5">
       <v-row class="my-4" align-content="center" justify="center">
-        <h1>Membership</h1>
+        <h1 class="memberships-title">Memberships</h1>
       </v-row>
       <v-row align-content="center" justify="center">
         <!-- Basic Tier Subscription -->
-        <v-card max-height="550" height="550" width="350">
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-            height="150px"
-          ></v-img>
+        <v-card class="mx-2" max-height="550" height="509" width="350">
+          <v-sheet color="rgba(209, 191, 183, 1)" elevation="1" height="100">
+            <v-container>
+              <v-col>
+                <v-row align-content="center" justify="center" no-gutters>
+                  <h1 class="white--text">Basic</h1>
+                </v-row>
+              </v-col>
+            </v-container>
+          </v-sheet>
 
-          <v-card-title> Top western road trips </v-card-title>
+          <v-card-title> $3.99/mo Annual (Save $12)</v-card-title>
 
-          <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
+          <v-card-subtitle> $4.99/mo No Commitment </v-card-subtitle>
 
-          <v-card-actions>
-            <v-btn color="orange lighten-2" text> Explore </v-btn>
+          <v-data-table
+            :headers="headers"
+            :items="desserts"
+            hide-default-header
+            hide-default-footer
+            class="elevation-1"
+          ></v-data-table>
 
-            <v-spacer></v-spacer>
-
-            <v-btn icon @click="show = !show">
-              <v-icon>{{
-                show ? "mdi-chevron-up" : "mdi-chevron-down"
-              }}</v-icon>
+          <v-card-actions class="pa-0">
+            <v-btn color="green lighten-2 white--text" tile block>
+              Sign-up - Basic
             </v-btn>
           </v-card-actions>
         </v-card>
 
         <!-- Middle Tier/Premium Subscription -->
-        <v-card max-height="650" height="650" width="350">
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-            height="180px"
-          ></v-img>
+        <v-card class="mx-2" max-height="550" height="509" width="350">
+          <v-sheet color="rgba(209, 191, 183, 1)" elevation="1" height="100">
+            <v-container>
+              <v-col>
+                <v-row align-content="center" justify="center" no-gutters>
+                  <h1 class="white--text">Premium</h1>
+                </v-row>
+              </v-col>
+            </v-container>
+          </v-sheet>
 
-          <v-card-title> Top western road trips </v-card-title>
+          <v-card-title> $7.99/mo Annual (Save $24)</v-card-title>
 
-          <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
+          <v-card-subtitle> $9.99/mo No Commitment </v-card-subtitle>
 
-          <v-card-actions>
-            <v-btn color="orange lighten-2" text> Explore </v-btn>
+          <v-data-table
+            :headers="headers"
+            :items="desserts"
+            hide-default-header
+            hide-default-footer
+            class="elevation-1"
+          ></v-data-table>
 
-            <v-spacer></v-spacer>
-
-            <v-btn icon @click="show = !show">
-              <v-icon>{{
-                show ? "mdi-chevron-up" : "mdi-chevron-down"
-              }}</v-icon>
+          <v-card-actions class="pa-0">
+            <v-btn color="green lighten-2 white--text" tile block>
+              Sign-up - Premium
             </v-btn>
           </v-card-actions>
         </v-card>
-
         <!-- Diamond or Top tier Subscription -->
-        <v-card max-height="550" height="550" width="350">
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-            height="150px"
-          ></v-img>
+        <v-card class="mx-2" max-height="550" height="509" width="350">
+          <v-sheet color="rgba(209, 191, 183, 1)" elevation="1" height="100">
+            <v-container>
+              <v-col>
+                <v-row align-content="center" justify="center" no-gutters>
+                  <h1 class="white--text">Elite</h1>
+                </v-row>
+              </v-col>
+            </v-container>
+          </v-sheet>
 
-          <v-card-title> Top western road trips </v-card-title>
+          <v-card-title> $15.99/mo Annual (Save $48)</v-card-title>
 
-          <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
+          <v-card-subtitle> $19.99/mo No Commitment </v-card-subtitle>
 
-          <v-card-actions>
-            <v-btn color="orange lighten-2" text> Explore </v-btn>
+          <v-data-table
+            :headers="headers"
+            :items="desserts"
+            hide-default-header
+            hide-default-footer
+            class="elevation-1"
+          ></v-data-table>
 
-            <v-spacer></v-spacer>
-
-            <v-btn icon @click="show = !show">
-              <v-icon>{{
-                show ? "mdi-chevron-up" : "mdi-chevron-down"
-              }}</v-icon>
+          <v-card-actions class="pa-0">
+            <v-btn color="green lighten-2 white--text" tile block>
+              Sign-up - Elite
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -90,9 +110,46 @@ export default Vue.extend({
   components: {},
 
   data: () => ({
-    //
+    headers: [
+      {
+        text: "Features",
+        align: "start",
+        value: "name",
+      },
+      { text: "Description", value: "description" },
+    ],
+    desserts: [
+      {
+        name: "Feature 1",
+        description: "Feature Description",
+      },
+      {
+        name: "Feature 2",
+        description: "Feature Description",
+      },
+      {
+        name: "Feature 3",
+        description: "Feature Description",
+      },
+      {
+        name: "Feature 4",
+        description: "Feature Description",
+      },
+      {
+        name: "Feature 5",
+        description: "Feature Description",
+      },
+      {
+        name: "Feature 6",
+        description: "Feature Description",
+      },
+    ],
   }),
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.memberships-title {
+  color: rgba(226, 152, 134, 1);
+}
+</style>

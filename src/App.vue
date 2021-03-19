@@ -44,11 +44,11 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-$color-background: #f6f6f6;
-$color-foreground: #c0e7e8;
-$color-accent1: #d1bfb7;
+$color-background: rgba(246, 246, 246, 1);
+$color-foreground: rgba(192, 231, 232, 1);
+$color-accent1: rgba(209, 191, 183, 1);
 $color-accent2: rgba(226, 152, 134, 1);
-$color-accent3: #f47156;
+$color-accent3: rgba(244, 113, 86, 1);
 
 body {
   background-color: $color-background;
