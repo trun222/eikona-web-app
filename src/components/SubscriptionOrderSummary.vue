@@ -51,6 +51,7 @@
               <v-row>
                 <v-col>
                   <v-card
+                      class="pa-2"
                       tile
                     >
                       <v-list-item>
