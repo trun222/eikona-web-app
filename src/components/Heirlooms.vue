@@ -25,10 +25,12 @@
         </v-card>
       </v-row>
 
+      <v-row justify="center">
+        <h2 class="my-3">Services</h2>
+      </v-row>
+
       <v-row class="my-3" justify="center">
         <v-col cols="6">
-          <h3 class="my-3">Services</h3>
-
           <v-card
               class="pa-3"
               tile
@@ -44,10 +46,12 @@
         </v-col>
       </v-row>
 
+      <v-row justify="center">
+        <h2 class="my-3">Pricing</h2>
+      </v-row>
+
       <v-row class="my-3" justify="center">
         <v-col cols="6">
-          <h3 class="my-3">Pricing</h3>
-
           <v-card
               class="pa-3"
               tile
