@@ -19,6 +19,14 @@ const routes: Array<RouteConfig> = [
         /* webpackChunkName: "SubscriptionOrderSummary.vue" */ "../components/SubscriptionOrderSummary.vue"
       ),
   },
+  {
+    path: "/heirlooms",
+    name: "Heirlooms",
+    component: () =>
+      import(
+        /* webpackChunkName: "Heirlooms.vue" */ "../components/Heirlooms.vue"
+      ),
+  },
 ];
 
 const router = new VueRouter({
