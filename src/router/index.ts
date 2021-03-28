@@ -27,6 +27,14 @@ const routes: Array<RouteConfig> = [
         /* webpackChunkName: "Heirlooms.vue" */ "../components/Heirlooms.vue"
       ),
   },
+  {
+    path: "/heirlooms/builder",
+    name: "HeirloomsBuilder",
+    component: () =>
+      import(
+        /* webpackChunkName: "HeirloomsBuilder.vue" */ "../components/Heirlooms/Builder.vue"
+      ),
+  }
 ];
 
 const router = new VueRouter({
