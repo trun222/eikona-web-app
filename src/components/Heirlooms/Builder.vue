@@ -60,6 +60,144 @@
                     <v-btn :disabled="!blurayQuantity" color="success" block><v-icon>mdi-plus</v-icon></v-btn>
                   </v-col>
                 </v-row>
+
+
+                <!-- Extras -->
+                <h2 class="my-3">Extras</h2>
+
+                <p>
+                  Note: You have the option of adding an Eikona private and secure cloud storage subscription to your order so that as soon as your
+                  heirlooms are completely processed and digitized you can access them from our mobile app and share your favorite memories with friends
+                  and family. Or you can choose to receive a USB flash drive with your digitized content.
+                </p>
+
+                <!-- Eikona Membership -->
+                <v-row>
+                  <v-col>
+                    <h3>Eikona Membership</h3>
+
+                    <v-radio-group v-model="subscriptionOption">
+                      <v-radio value="elite">
+                        <template v-slot:label>
+                          <div><strong>Elite</strong> Membership. $15.99/mo Annual - $191.88 <strong>(Save $48)</strong></div>
+                        </template>
+                      </v-radio>
+                      <v-radio value="premium">
+                        <template v-slot:label>
+                          <div><strong>Premium</strong> Membership. $7.99/mo Annual - $95.88 <strong>(Save $24)</strong></div>
+                        </template>
+                      </v-radio>
+                      <v-radio value="basic">
+                        <template v-slot:label>
+                          <div><strong>Basic</strong> Membership. $3.99/mo Annual - $47.88 <strong>(Save $12)</strong></div>
+                        </template>
+                      </v-radio>
+                    </v-radio-group>
+                  </v-col>
+                </v-row>
+
+                <!-- USB Drive -->
+                <v-row>
+                  <v-col>
+                    <h3>USB Drives</h3>
+
+                    <p class="red--text">
+                      Note: We will return your digitized content on a USB drive of your selection. We may reach out to you if your USB drive
+                      capacity selected is too small for the amount of heirlooms that were digitized.
+                    </p>
+
+                    <v-row>
+                      <v-col cols="5">
+                        <v-chip
+                          class="ma-2"
+                          color="rgba(209, 191, 183, 1)"
+                          label
+                        >
+                          <v-icon left>
+                            mdi-usb-flash-drive                          
+                          </v-icon>
+                          1TB ($50 each)                        
+                        </v-chip>
+                      </v-col>
+                      <v-col cols="4" align-self="center">
+                        <v-text-field label="Quantity" hide-details solo clearable></v-text-field>
+                      </v-col>
+                      <v-col cols="2" align-self="center">
+                        <v-btn :disabled="!blurayQuantity" color="success" block><v-icon>mdi-plus</v-icon></v-btn>
+                      </v-col>
+                    </v-row>
+                    
+                    <v-row>
+                      <v-col cols="5">
+                        <v-chip
+                          class="ma-2"
+                          color="rgba(209, 191, 183, 1)"
+                          label
+                        >
+                          <v-icon left>
+                            mdi-usb-flash-drive                          
+                          </v-icon>
+                          512GB ($35 each)
+                        </v-chip>
+                      </v-col>
+                      <v-col cols="4" align-self="center">
+                        <v-text-field label="Quantity" hide-details solo clearable></v-text-field>
+                      </v-col>
+                      <v-col cols="2" align-self="center">
+                        <v-btn :disabled="!blurayQuantity" color="success" block><v-icon>mdi-plus</v-icon></v-btn>
+                      </v-col>
+                    </v-row>
+
+                    <v-row>
+                      <v-col cols="5">
+                        <v-chip
+                          class="ma-2"
+                          color="rgba(209, 191, 183, 1)"
+                          label
+                        >
+                          <v-icon left>
+                            mdi-usb-flash-drive                          
+                          </v-icon>
+                          128GB ($25 each)
+                        </v-chip>
+                      </v-col>
+                      <v-col cols="4" align-self="center">
+                        <v-text-field label="Quantity" hide-details solo clearable></v-text-field>
+                      </v-col>
+                      <v-col cols="2" align-self="center">
+                        <v-btn :disabled="!blurayQuantity" color="success" block><v-icon>mdi-plus</v-icon></v-btn>
+                      </v-col>
+                    </v-row>
+
+
+                    <v-row>
+                      <v-col cols="5">
+                        <v-chip
+                          class="ma-2"
+                          color="rgba(209, 191, 183, 1)"
+                          label
+                        >
+                          <v-icon left>
+                            mdi-usb-flash-drive                          
+                          </v-icon>
+                          64GB USB ($15 each)
+                        </v-chip>
+                      </v-col>
+                      <v-col cols="4" align-self="center">
+                        <v-text-field label="Quantity" hide-details solo clearable></v-text-field>
+                      </v-col>
+                      <v-col cols="2" align-self="center">
+                        <v-btn :disabled="!blurayQuantity" color="success" block><v-icon>mdi-plus</v-icon></v-btn>
+                      </v-col> 
+                    </v-row>
+                  </v-col>
+                </v-row>
+
+                <p class="my-4 warning--text">
+                  Note: You need to either select an Eikona Membership or a USB drive option for your heirlooms so that we are able to make the digitized version of your physical copies available to you.
+                  If you choose both a membership and a USB you will be able to access your digitized photos and videos from our mobile app and on a USB drive that we mail back to you. Feel free to order multiple
+                  USB drives if you want multiple backups for you and a family member or friend.
+                </p>
             </v-form>
           </v-card>
         </v-col>
@@ -87,7 +225,8 @@ export default Vue.extend({
     vhsQuantity: '',
     cdQuantity: '',
     dvdQuantity: '',
-    blurayQuantity: ''
+    blurayQuantity: '',
+    subscriptionOption: '',
   }),
 });
 </script>
