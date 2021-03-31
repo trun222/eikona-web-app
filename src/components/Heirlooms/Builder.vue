@@ -4,8 +4,26 @@
       <v-row align-content="center" justify="center">
         <v-col cols="4">
           <v-card class="pa-5">
+            <h2 class="mb-4">Heirlooms - Process</h2>
+
+            <v-data-table
+                :headers="services_headers"
+                :items="services"
+                hide-default-header
+                hide-default-footer
+                disable-filtering
+                disable-sort
+            ></v-data-table>
+          </v-card>  
+        </v-col>
+      </v-row>
+
+
+      <v-row align-content="center" justify="center">
+        <v-col cols="4">
+          <v-card class="pa-5">
             <v-form>
-                <h2 class="mb-4">Heirlooms Builder</h2>
+                <h2 class="mb-4">Heirlooms - Builder</h2>
 
                 <p class="red--text">
                   Note: The product is not added to the cart until the '+' button is clicked.
@@ -227,6 +245,32 @@ export default Vue.extend({
     dvdQuantity: '',
     blurayQuantity: '',
     subscriptionOption: '',
+    services_headers: [
+      { text: "Service", value: "name" },
+      { text: "Description", value: "description" },
+    ],
+    services: [
+      {
+        name: "Photos",
+        description: "We carefully take your photos and use a high quality scanner to digitally preserve your favorite memories",
+      },
+      {
+        name: "VHS's",
+        description: "Each VHS tape will be rewinded and digitized using modern software and hardware to ensure the best possible digitally preserved video",
+      },
+      {
+        name: "DVD's",
+        description: "If you have photos or videos on DVD's we can help you make them more accessible by digitizing your DVD memories",
+      },
+      {
+        name: "CD's",
+        description: "Your music or audio recordings with your friends & family will not be digitized and made available on Eikona Cloud or a USB drive",
+      },
+      {
+        name: "Bluray's",
+        description: "High definition family videos can now be easily stored in the cloud or easily accessed on a USB drive",
+      },
+    ],
   }),
 });
 </script>
