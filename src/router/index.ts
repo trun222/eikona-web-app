@@ -4,6 +4,14 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
+    path: "/",
+    name: "Landing",
+    component: () =>
+      import(
+        /* webpackChunkName: "Landing.vue" */ "../components/Landing.vue"
+      ),
+  },
+  {
     path: "/subscription",
     name: "Subscription",
     component: () =>
