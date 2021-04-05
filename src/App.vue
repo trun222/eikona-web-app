@@ -27,6 +27,24 @@ export default Vue.extend({
 <style lang="scss">
 @import '@/styles/colors.scss';
 
+@font-face {
+  font-family: primaryFont;
+  src: url('./assets/fonts/Meedori-Sans/Meedori-Sans-Regular.ttf');
+}
+
+@font-face {
+  font-family: secondaryFont;
+  src: url('./assets/fonts/Questrial/Questrial-Regular.ttf');
+}
+  
+h1 {
+    font-family: primaryFont;
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: secondaryFont;
+}
+
 body {
   background-color: $color-background;
 }

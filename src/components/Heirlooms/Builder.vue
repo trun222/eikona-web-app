@@ -2,7 +2,7 @@
   <div class="builder">
     <v-container class="mt-5">
       <v-row align-content="center" justify="center">
-        <v-col cols="4">
+        <v-col cols="4" md="8">
           <v-card class="pa-5">
             <h2 class="mb-4">What we do.</h2>
 
@@ -20,7 +20,7 @@
 
 
       <v-row align-content="center" justify="center">
-        <v-col cols="4">
+        <v-col cols="4" md="8">
           <v-card class="pa-5">
             <v-form>
                 <h2 class="mb-4">Heirlooms to Digitize.</h2>
@@ -222,7 +222,7 @@
       </v-row>
 
       <v-row justify="center">
-        <v-col cols="4">
+        <v-col cols="4" md="8">
           <v-btn class="my-2" :disabled="photosQuantity || vhsQuantity || cdQuantity || dvdQuantity || blurayQuantity" color="success" block>Checkout</v-btn>
         </v-col>
       </v-row>

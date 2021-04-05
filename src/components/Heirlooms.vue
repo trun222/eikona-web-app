@@ -65,7 +65,7 @@
 
       <v-row class="my-3" justify="center">
         <v-col cols="6">
-          <v-btn class="white--text" color="rgba(209, 191, 183, 1)" block>Preserve your favorite memories now!</v-btn>
+          <v-btn class="white--text" color="rgba(209, 191, 183, 1)" block to="/heirlooms/builder">Preserve your favorite memories now!</v-btn>
         </v-col>
       </v-row>
     </v-container>
