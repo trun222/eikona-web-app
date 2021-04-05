@@ -29,7 +29,7 @@
             <v-img
               height="550"
               lazy-src="https://picsum.photos/id/11/10/6"
-              src="https://picsum.photos/id/11/500/300"
+              :src="require('../../src/assets/example_1.jpg')"
             ></v-img>
           </v-col>
       </v-row>
@@ -51,7 +51,7 @@
             <v-img
               height="550"
               lazy-src="https://picsum.photos/id/11/10/6"
-              src="https://picsum.photos/id/11/500/300"
+              :src="require('../../src/assets/example_2.jpg')"
             ></v-img>
           </v-col>
           <v-col align-self="center" justify="center">
@@ -65,8 +65,13 @@
       color="rgba(226, 152, 134, 1)"
       padless
     >
-    <div class="pa-2">
-      Eikona {{ new Date().getFullYear() }} 
+    <div class="pl-3">
+      <v-img
+        contain
+        height="50"
+        width="150"
+        :src="require('../../src/assets/eikona-branding.png')"
+      />
     </div>
     <v-row
       justify="center"
