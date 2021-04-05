@@ -24,7 +24,7 @@
             v-bind="attrs"
             v-on="on"
           >
-            <v-icon>mdi-menu</v-icon>
+            <v-icon color="rgba(226, 152, 134, 1)">mdi-menu</v-icon>
           </v-btn>
         </template>
 
