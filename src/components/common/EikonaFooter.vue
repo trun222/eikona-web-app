@@ -4,14 +4,6 @@
       class="eikona-company-gradient"
       padless
     >
-      <div class="pl-3">
-        <v-img
-          contain
-          height="50"
-          width="150"
-          :src="require('@/assets/eikona-branding.png')"
-        />
-      </div>
       <v-row
         justify="center"
         no-gutters

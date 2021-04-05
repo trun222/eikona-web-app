@@ -31,8 +31,9 @@
         <v-list class="py-0">
           <v-list-item
             v-for="link in navLinks"
-            :key="link"
+            :key="link.text"
             @click="() => {}"
+            :to="link.to"
           >
             <v-list-item-title>
             <v-icon>{{ link.icon}}</v-icon> {{ link.text }}
@@ -54,7 +55,7 @@ export default Vue.extend({
 
   data: () => ({
     navLinks: [
-      { text: 'Login', icon: 'mdi-login-variant'},
+      { text: 'Login', icon: 'mdi-login-variant', to: '/login'},
       { text: 'Services', icon: 'mdi-hammer-wrench'},
       { text: 'Blog', icon: 'mdi-newspaper-variant'},
       { text: 'About Us', icon: 'mdi-help'},

@@ -12,6 +12,14 @@ const routes: Array<RouteConfig> = [
       ),
   },
   {
+    path: "/login",
+    name: "Login",
+    component: () =>
+      import(
+        /* webpackChunkName: "Login.vue" */ "../components/Login.vue"
+      ),
+  },
+  {
     path: "/memberships",
     name: "Memberships",
     component: () =>
