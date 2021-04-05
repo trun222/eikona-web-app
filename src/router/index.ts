@@ -12,19 +12,19 @@ const routes: Array<RouteConfig> = [
       ),
   },
   {
-    path: "/subscription",
-    name: "Subscription",
+    path: "/memberships",
+    name: "Memberships",
     component: () =>
       import(
-        /* webpackChunkName: "Subscriptions.vue" */ "../components/Subscriptions.vue"
+        /* webpackChunkName: "Memberships.vue" */ "../components/Memberships.vue"
       ),
   },
   {
-    path: "/subscription-order-summary",
-    name: "SubscriptionOrderSummary",
+    path: "/membership-order-summary",
+    name: "MembershipOrderSummary",
     component: () =>
       import(
-        /* webpackChunkName: "SubscriptionOrderSummary.vue" */ "../components/SubscriptionOrderSummary.vue"
+        /* webpackChunkName: "MembershipOrderSummary.vue" */ "../components/MembershipOrderSummary.vue"
       ),
   },
   {

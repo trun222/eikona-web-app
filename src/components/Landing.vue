@@ -61,45 +61,18 @@
     </section>
 
     <!-- Footer -->
-    <v-footer
-      class="eikona-company-gradient"
-      padless
-    >
-    <div class="pl-3">
-      <v-img
-        contain
-        height="50"
-        width="150"
-        :src="require('../../src/assets/eikona-branding.png')"
-      />
-    </div>
-    <v-row
-      justify="center"
-      no-gutters
-    >
-
-      <v-btn
-        v-for="link in navLinks"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-2"
-      >
-        {{ link }}
-      </v-btn>
-    </v-row>
-  </v-footer>
+    <eikona-footer></eikona-footer>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import EikonaFooter from "./common/EikonaFooter.vue";
 
 export default Vue.extend({
   name: "Landing",
 
-  components: {},
+  components: {EikonaFooter},
 
   data: () => ({
     navLinks: [
@@ -114,16 +87,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-$color-background: rgba(246, 246, 246, 1);
-$color-foreground: rgba(192, 231, 232, 1);
-$color-accent1: rgba(209, 191, 183, 1);
-$color-accent2: rgba(226, 152, 134, 1);
-$color-accent3: rgba(244, 113, 86, 1);
-
-.eikona-company-gradient {
-  background: rgb(226,152,134);
-  background: linear-gradient(90deg, rgba(226,152,134,1) 0%, rgba(209,191,183,1) 42%, rgba(192,231,232,0.9808298319327731) 72%, rgba(246,231,232,1) 92%);
-}
+@import '@/styles/colors.scss';
 
 .intro-video {
   height: 93vh;
@@ -133,15 +97,10 @@ $color-accent3: rgba(244, 113, 86, 1);
 .landing-section {
   height: 550px;
   width: 100%;
-  background-color: white;
 }
 
 .section-container {
   height: 100%;
-}
-
-.section-next {
-  background-color: rgba(226, 152, 134, 1);
 }
 
 .description-image {

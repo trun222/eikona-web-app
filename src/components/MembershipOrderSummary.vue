@@ -1,8 +1,8 @@
 <template>
-  <div class="subscription-order-summary">
+  <div class="membership-order-summary">
     <v-container class="mt-5">
       <v-row class="my-4" justify="center">
-        <h1>Subscription Checkout</h1>
+        <h1>Membership Checkout</h1>
       </v-row>
         
       <v-row class="my-2" justify="center">
@@ -102,16 +102,19 @@
         </v-col>
       </v-row>
     </v-container>
+    
+    <eikona-footer></eikona-footer>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import EikonaFooter from "./common/EikonaFooter.vue";
 
 export default Vue.extend({
-  name: "subscription-order-summary",
+  name: "membership-order-summary",
 
-  components: {},
+  components: {EikonaFooter},
 
   data: () => ({
     date: null,

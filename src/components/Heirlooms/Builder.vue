@@ -227,16 +227,19 @@
         </v-col>
       </v-row>
     </v-container>
+    
+    <eikona-footer></eikona-footer>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import EikonaFooter from "../common/EikonaFooter.vue";
 
 export default Vue.extend({
   name: "Builder",
 
-  components: {},
+  components: {EikonaFooter},
 
   data: () => ({
     photosQuantity: '',

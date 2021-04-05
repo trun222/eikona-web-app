@@ -1,9 +1,6 @@
 <template>
-  <div class="subscriptions">
-    <v-container class="mt-5">
-      <v-row class="my-4" align-content="center" justify="center">
-        <h1 class="memberships-title">Memberships</h1>
-      </v-row>
+  <div class="Memberships">
+    <v-container class="mt-5 membership-container">
       <v-row align-content="center" justify="center">
         <!-- Basic Tier Subscription -->
         <v-card class="mx-2" max-height="550" height="509" width="350">
@@ -98,16 +95,19 @@
         </v-card>
       </v-row>
     </v-container>
+
+    <eikona-footer></eikona-footer>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import EikonaFooter from "./common/EikonaFooter.vue";
 
 export default Vue.extend({
-  name: "Subscriptions",
+  name: "Memberships",
 
-  components: {},
+  components: {EikonaFooter},
 
   data: () => ({
     headers: [
@@ -149,7 +149,9 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.memberships-title {
-  color: rgba(226, 152, 134, 1);
+@import '@/styles/colors.scss';
+
+.membership-container {
+  height: 84.2vh;
 }
 </style>
