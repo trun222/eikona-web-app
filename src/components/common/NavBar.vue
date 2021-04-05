@@ -28,13 +28,15 @@
           </v-btn>
         </template>
 
-        <v-list>
+        <v-list class="py-0">
           <v-list-item
             v-for="link in navLinks"
             :key="link"
             @click="() => {}"
           >
-            <v-list-item-title>{{ link }}</v-list-item-title>
+            <v-list-item-title>
+            <v-icon>{{ link.icon}}</v-icon> {{ link.text }}
+            </v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -52,12 +54,12 @@ export default Vue.extend({
 
   data: () => ({
     navLinks: [
-      'Login',
-      'Services',
-      'Blog',
-      'About Us',
-      'Team',
-      'Contact Us',
+      { text: 'Login', icon: 'mdi-login-variant'},
+      { text: 'Services', icon: 'mdi-hammer-wrench'},
+      { text: 'Blog', icon: 'mdi-newspaper-variant'},
+      { text: 'About Us', icon: 'mdi-help'},
+      { text: 'Team', icon: 'mdi-account-group'},
+      { text: 'Contact Us', icon: 'mdi-card-account-mail'},
     ],
   }),
 });
