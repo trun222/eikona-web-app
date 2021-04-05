@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <v-app-bar app color="rgba(226, 152, 134, 1)">
+    <v-app-bar app class="eikona-company-gradient">
       <v-spacer></v-spacer>
 
       <div class="d-flex align-center">
@@ -52,5 +52,10 @@ $color-accent3: rgba(244, 113, 86, 1);
 
 body {
   background-color: $color-background;
+}
+
+.eikona-company-gradient {
+  background: rgb(226,152,134);
+  background: linear-gradient(90deg, rgba(226,152,134,1) 0%, rgba(209,191,183,1) 42%, rgba(192,231,232,0.9808298319327731) 72%, rgba(246,231,232,1) 92%);
 }
 </style>
