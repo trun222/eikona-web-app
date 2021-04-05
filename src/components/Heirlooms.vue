@@ -1,6 +1,6 @@
 <template>
-  <div class="heirlooms">
-    <v-container class="mt-5">
+  <div class="heirlooms eikona-company-gradient pa-3">
+    <v-container class="pa-5">
       <!-- Heirloom Explaination Video -->
       <v-row class="my-3" justify="center">
         <v-sheet class="pa-3" color="rgba(209, 191, 183, 1)" height="465" width="725" elevation="3">
@@ -145,7 +145,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+@import '@/styles/colors.scss';
+
 .memberships-title {
   color: rgba(226, 152, 134, 1);
+}
+
+.eikona-company-gradient {
+  background: $color-accent2;
+  background: linear-gradient(90deg, $color-accent2 0%, $color-accent1 42%, $color-foreground 72%, $color-background 92%);
 }
 </style>

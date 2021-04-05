@@ -1,6 +1,6 @@
 <template>
-  <div class="Memberships">
-    <v-container class="mt-5 membership-container">
+  <div class="Memberships eikona-company-gradient pa-4">
+    <v-container class="pa-5 membership-container">
       <v-row align-content="center" justify="center">
         <!-- Basic Tier Subscription -->
         <v-card class="mx-2" max-height="550" height="509" width="350">
@@ -153,5 +153,10 @@ export default Vue.extend({
 
 .membership-container {
   height: 84.2vh;
+}
+
+.eikona-company-gradient {
+  background: $color-accent2;
+  background: linear-gradient(90deg, $color-accent2 0%, $color-accent1 42%, $color-foreground 72%, $color-background 92%);
 }
 </style>

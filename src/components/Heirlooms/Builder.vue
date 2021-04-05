@@ -1,6 +1,6 @@
 <template>
-  <div class="builder">
-    <v-container class="mt-5">
+  <div class="builder eikona-company-gradient pa-3">
+    <v-container class="pa-5">
       <v-row align-content="center" justify="center">
         <v-col cols="4" md="8">
           <v-card class="pa-5">
@@ -279,7 +279,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+@import '@/styles/colors.scss';
+
 .memberships-title {
   color: rgba(226, 152, 134, 1);
+}
+
+.eikona-company-gradient {
+  background: $color-accent2;
+  background: linear-gradient(90deg, $color-accent2 0%, $color-accent1 42%, $color-foreground 72%, $color-background 92%);
 }
 </style>
