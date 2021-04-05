@@ -14,13 +14,30 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        icon
+      <v-menu
+        left
+        bottom
       >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            icon
+            v-bind="attrs"
+            v-on="on"
+          >
+            <v-icon>mdi-menu</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item
+            v-for="link in navLinks"
+            :key="link"
+            @click="() => {}"
+          >
+            <v-list-item-title>{{ link }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
 
     <v-main>
@@ -38,7 +55,14 @@ export default Vue.extend({
   components: {},
 
   data: () => ({
-    //
+    navLinks: [
+      'Login',
+      'Services',
+      'Blog',
+      'About Us',
+      'Team',
+      'Contact Us',
+    ],
   }),
 });
 </script>

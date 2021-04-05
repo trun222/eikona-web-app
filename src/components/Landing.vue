@@ -22,10 +22,10 @@
     <!-- Heirlooms Service Brief Overview -->
     <section class="ma-0 pa-3 landing-section heirlooms-section">
       <v-row class="section-container" justify="center">
-          <v-col align-self="center" justify="center">
+          <v-col cols="6" align-self="center" justify="center">
             <h2 class="text-center">Brief overview of Heirloom services.</h2>
           </v-col>
-          <v-col class="ma-0 pa-0 description-image">
+          <v-col class="ma-0 pa-0 description-image" cols="6">
             <v-img
               height="550"
               lazy-src="https://picsum.photos/id/11/10/6"
@@ -47,14 +47,14 @@
     <!-- Eikona Cloud Sync Brief Overview -->
     <section class="ma-0 pa-3 landing-section cloud-storage-overview">
       <v-row class="section-container" justify="center">
-          <v-col class="ma-0 pa-0 description-image">
+          <v-col class="ma-0 pa-0 description-image" cols="6">
             <v-img
               height="550"
               lazy-src="https://picsum.photos/id/11/10/6"
               :src="require('../../src/assets/example_2.jpg')"
             ></v-img>
           </v-col>
-          <v-col align-self="center" justify="center">
+          <v-col align-self="center" justify="center" cols="6">
             <h2 class="text-center">Brief overview of Heirloom services.</h2>
           </v-col>
       </v-row>
@@ -79,7 +79,7 @@
     >
 
       <v-btn
-        v-for="link in footerLinks"
+        v-for="link in navLinks"
         :key="link"
         color="white"
         text
@@ -102,7 +102,7 @@ export default Vue.extend({
   components: {},
 
   data: () => ({
-    footerLinks: [
+    navLinks: [
       'About Us',
       'Team',
       'Services',
