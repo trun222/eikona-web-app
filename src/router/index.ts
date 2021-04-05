@@ -20,6 +20,14 @@ const routes: Array<RouteConfig> = [
       ),
   },
   {
+    path: "/services",
+    name: "Services",
+    component: () =>
+      import(
+        /* webpackChunkName: "Services.vue" */ "../components/Services.vue"
+      ),
+  },
+  {
     path: "/memberships",
     name: "Memberships",
     component: () =>

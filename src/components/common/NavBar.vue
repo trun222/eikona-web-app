@@ -55,8 +55,9 @@ export default Vue.extend({
 
   data: () => ({
     navLinks: [
+      { text: 'Home', icon: 'mdi-home-circle', to: '/'},
       { text: 'Login', icon: 'mdi-login-variant', to: '/login'},
-      { text: 'Services', icon: 'mdi-hammer-wrench'},
+      { text: 'Services', icon: 'mdi-hammer-wrench', to: '/services'},
       { text: 'Blog', icon: 'mdi-newspaper-variant'},
       { text: 'About Us', icon: 'mdi-help'},
       { text: 'Team', icon: 'mdi-account-group'},
