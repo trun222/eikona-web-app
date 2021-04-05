@@ -11,7 +11,7 @@
 
     <!-- Company Description Section -->
     <section class="ma-0 landing-section heirlooms-background">
-      <v-row class="section-container" justify="center">
+      <v-row class="section-container" justify="center" no-gutters>
         <v-col align-self="center" cols="6">
           <h1 class="text-center">Eikona Heirlooms</h1>
         </v-col>
@@ -20,11 +20,10 @@
     
 
     <!-- Heirlooms Service Brief Overview -->
-    <section class="ma-0 pa-3 landing-section">
+    <section class="ma-0 pa-3 landing-section heirlooms-section">
       <v-row class="section-container" justify="center">
           <v-col align-self="center" justify="center">
-            <div class="heirlooms-overview-background"></div>
-            <h2 class="heirlooms-text text-center">Brief overview of Heirloom services.</h2>
+            <h2 class="text-center">Brief overview of Heirloom services.</h2>
           </v-col>
           <v-col class="ma-0 pa-0 description-image">
             <v-img
@@ -37,7 +36,7 @@
     </section>
 
     <!-- Eikona Cloud Sync Description -->
-    <section class="ma-0 pa-3 landing-section cloud-background">
+    <section class="ma-0 pa-3 landing-section cloud-storage-section">
       <v-row class="section-container" justify="center">
         <v-col align-self="center" cols="6">
           <h2 class="text-center">Eikona Secure & Privacy Cloud Storage</h2>
@@ -46,7 +45,7 @@
     </section>
 
     <!-- Eikona Cloud Sync Brief Overview -->
-    <section class="ma-0 pa-3 landing-section">
+    <section class="ma-0 pa-3 landing-section cloud-storage-overview">
       <v-row class="section-container" justify="center">
           <v-col class="ma-0 pa-0 description-image">
             <v-img
@@ -66,10 +65,14 @@
       color="rgba(226, 152, 134, 1)"
       padless
     >
+    <div class="pa-2">
+      Eikona {{ new Date().getFullYear() }} 
+    </div>
     <v-row
       justify="center"
       no-gutters
     >
+
       <v-btn
         v-for="link in footerLinks"
         :key="link"
@@ -80,12 +83,6 @@
       >
         {{ link }}
       </v-btn>
-      <v-col
-        class="lighten-2 py-4 text-center white--text"
-        cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-col>
     </v-row>
   </v-footer>
   </div>
@@ -101,7 +98,6 @@ export default Vue.extend({
 
   data: () => ({
     footerLinks: [
-      'Home',
       'About Us',
       'Team',
       'Services',
@@ -113,6 +109,12 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+$color-background: rgba(246, 246, 246, 1);
+$color-foreground: rgba(192, 231, 232, 1);
+$color-accent1: rgba(209, 191, 183, 1);
+$color-accent2: rgba(226, 152, 134, 1);
+$color-accent3: rgba(244, 113, 86, 1);
+
 .intro-video {
   height: 93vh;
   width: 100%;
@@ -138,24 +140,32 @@ export default Vue.extend({
 }
 
 .heirlooms-background {
-  background-image: url("../assets/waves.svg");
-  background-position: bottom;
+	background: linear-gradient(-45deg, $color-background, $color-foreground, $color-accent1, $color-accent2, $color-accent3);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
 }
 
-.heirlooms-text {
-  position: relative;
-  top: -170px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-.heirlooms-overview-background {
-  height: 300px;
-  background-image: url("../assets/blob_1.svg");
-  background-size: 325px 560px;
-  background-position: center;
+.heirlooms-section {
+  background-color: $color-accent1;
 }
 
-.cloud-background {
-  background-image: url("../assets/circle-scatter.svg");
-  background-position: bottom;
+.cloud-storage-section {
+  background-color: $color-foreground;
+}
+
+.cloud-storage-overview {
+  background-color: $color-accent1;
 }
 </style>
