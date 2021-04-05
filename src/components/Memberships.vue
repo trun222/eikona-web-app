@@ -8,7 +8,7 @@
             <v-container>
               <v-col>
                 <v-row align-content="center" justify="center" no-gutters>
-                  <h1 class="white--text">Basic</h1>
+                  <h1 class="white--text default-letter-spacing">Basic</h1>
                 </v-row>
               </v-col>
             </v-container>
@@ -27,7 +27,7 @@
           ></v-data-table>
 
           <v-card-actions class="pa-0">
-            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary">
+            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary" depressed>
               Sign-up - Basic
             </v-btn>
           </v-card-actions>
@@ -39,7 +39,7 @@
             <v-container>
               <v-col>
                 <v-row align-content="center" justify="center" no-gutters>
-                  <h1 class="white--text">Premium</h1>
+                  <h1 class="white--text default-letter-spacing">Premium</h1>
                 </v-row>
               </v-col>
             </v-container>
@@ -58,7 +58,7 @@
           ></v-data-table>
 
           <v-card-actions class="pa-0">
-            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary">
+            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary" depressed>
               Sign-up - Premium
             </v-btn>
           </v-card-actions>
@@ -69,7 +69,7 @@
             <v-container>
               <v-col>
                 <v-row align-content="center" justify="center" no-gutters>
-                  <h1 class="white--text">Elite</h1>
+                  <h1 class="white--text default-letter-spacing">Elite</h1>
                 </v-row>
               </v-col>
             </v-container>
@@ -88,7 +88,7 @@
           ></v-data-table>
 
           <v-card-actions class="pa-0">
-            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary">
+            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary" depressed>
               Sign-up - Elite
             </v-btn>
           </v-card-actions>

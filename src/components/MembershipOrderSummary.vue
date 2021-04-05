@@ -5,7 +5,7 @@
         <v-col cols="3" md="6">
           <!-- Form For Account Creation -->
           <v-form class="pa-4">
-            <h2 class="mb-4 white--text">Account Creation</h2>
+            <h2 class="mb-4 white--text default-letter-spacing">Account Creation</h2>
             <v-row>
               <v-col>
                 <v-text-field label="Username" prepend-inner-icon="mdi-account-box" solo></v-text-field>
@@ -29,7 +29,7 @@
           </v-form>
           <v-row justify="center">
             <v-col cols="10">
-              <v-btn class="white--text" color="blue" block>Create Account</v-btn>
+              <v-btn class="white--text" color="blue" block depressed>Create Account</v-btn>
             </v-col>
           </v-row>
         </v-col>
@@ -38,7 +38,7 @@
       <v-row class="my-2" justify="center">
         <v-col cols="3" md="6">
           <v-form class="pa-4">
-            <h2 class="mb-4 white--text">Order Summary</h2>
+            <h2 class="mb-4 white--text default-letter-spacing">Order Summary</h2>
             <v-row>
               <v-col>
                 <v-card
@@ -86,7 +86,7 @@
 
           <v-row class="mt-5" justify="center">
             <v-col cols="10">
-              <v-btn class="white--text" color="green" block>Pay</v-btn>
+              <v-btn class="white--text" color="green" block depressed>Pay</v-btn>
             </v-col>
           </v-row>
         </v-col>

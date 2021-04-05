@@ -13,7 +13,7 @@
             <h2 class="white--text">Preserve your favorite family memories!</h2>
           </v-row>
           <v-row justify="center">
-            <v-btn color="rgba(192, 231, 232, 1)" to="/heirlooms" dark>Explore</v-btn>
+            <v-btn color="rgba(192, 231, 232, 1)" to="/heirlooms" dark depressed>Explore</v-btn>
           </v-row>
         </v-sheet>
       </v-col>
@@ -29,7 +29,7 @@
             <h2 class="white--text">Safely sync your videos and images.</h2>
           </v-row>
           <v-row justify="center">
-            <v-btn color="rgba(226, 152, 134, 1)" to="/memberships" dark>Explore</v-btn>
+            <v-btn color="rgba(226, 152, 134, 1)" to="/memberships" dark depressed>Explore</v-btn>
           </v-row>
         </v-sheet>
       </v-col>

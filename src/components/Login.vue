@@ -4,7 +4,7 @@
       <v-row class="match-parent-height" align-content="center" justify="center">
         <v-col cols="6">
           <v-form class="pa-4">
-            <h2 class="mb-4 white--text">Login</h2>
+            <h2 class="mb-4 white--text default-letter-spacing">Login</h2>
             <v-row>
               <v-col>
                 <v-text-field label="Username" prepend-inner-icon="mdi-account-box" solo></v-text-field>

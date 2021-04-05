@@ -11,61 +11,41 @@
         </v-sheet>
       </v-row>
 
-      <v-row class="my-5" justify="center">
-        <v-card
-          class="pa-5"
-          >
-          <p>
-            This is a small text area containing our marketing info for heirlooms.
-          </p>
-        </v-card>
-      </v-row>
-
       <v-row justify="center">
-        <h2 class="my-3">Services</h2>
+        <h2 class="my-3 white--text default-letter-spacing">Services</h2>
       </v-row>
 
-      <v-row class="my-3" justify="center">
+      <v-row class="my-4" justify="center">
         <v-col cols="6">
-          <v-card
-              class="pa-3"
-              tile
-            >
-              <v-data-table
-                :headers="services_headers"
-                :items="services"
-                hide-default-footer
-                disable-filtering
-                disable-sort
-              ></v-data-table>
-            </v-card>
+          <v-data-table
+            :headers="services_headers"
+            :items="services"
+            hide-default-footer
+            disable-filtering
+            disable-sort
+          ></v-data-table>
         </v-col>
       </v-row>
 
       <v-row justify="center">
-        <h2 class="my-3">Pricing</h2>
+        <h2 class="my-3 white--text default-letter-spacing">Pricing</h2>
       </v-row>
 
       <v-row class="my-3" justify="center">
         <v-col cols="6">
-          <v-card
-              class="pa-3"
-              tile
-            >
-              <v-data-table
-                :headers="prices_headers"
-                :items="prices"
-                hide-default-footer
-                disable-filtering
-                disable-sort
-              ></v-data-table>
-            </v-card>
+          <v-data-table
+            :headers="prices_headers"
+            :items="prices"
+            hide-default-footer
+            disable-filtering
+            disable-sort
+          ></v-data-table>
         </v-col>
       </v-row>
 
       <v-row class="my-3" justify="center">
         <v-col cols="6">
-          <v-btn class="white--text" color="rgba(209, 191, 183, 1)" block to="/heirlooms/builder">Preserve your favorite memories now!</v-btn>
+          <v-btn class="white--text" color="rgba(226, 152, 134, 1)" block to="/heirlooms/builder" depressed>Preserve your favorite memories now!</v-btn>
         </v-col>
       </v-row>
     </v-container>

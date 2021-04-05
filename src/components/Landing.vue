@@ -27,7 +27,7 @@
                 <h2 class="section-description-text text-center">Brief overview of Heirloom services.</h2>
             </v-row>
             <v-row justify="center">
-                <v-btn class="mt-3" color="rgba(192, 231, 232, 1)" to="/heirlooms" dark>More</v-btn>
+                <v-btn class="mt-3" color="rgba(192, 231, 232, 1)" to="/heirlooms" dark depressed>Explore</v-btn>
             </v-row>
           </v-col>
           <v-col class="ma-0 pa-0 description-image" cols="6">
@@ -64,7 +64,7 @@
               <h2 class="section-description-text text-center">Brief overview of Cloud services.</h2>
             </v-row>
             <v-row justify="center">
-              <v-btn class="mt-3" color="rgba(192, 231, 232, 1)" to="/memberships" dark>More</v-btn>
+              <v-btn class="mt-3" color="rgba(192, 231, 232, 1)" to="/memberships" dark depressed>Explore</v-btn>
             </v-row>
           </v-col>
       </v-row>

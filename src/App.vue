@@ -45,6 +45,10 @@ h2,h3,h4,h5,h6 {
   font-family: secondaryFont;
 }
 
+.default-letter-spacing {
+  letter-spacing: .5rem;
+}
+
 body {
   background-color: $color-background;
 }
