@@ -1,10 +1,6 @@
 <template>
   <div class="heirlooms">
     <v-container class="mt-5">
-      <v-row class="my-4" align-content="center" justify="center">
-        <h1>Heirlooms</h1>
-      </v-row>
-
       <!-- Heirloom Explaination Video -->
       <v-row class="my-3" justify="center">
         <v-sheet class="pa-3" color="rgba(209, 191, 183, 1)" height="465" width="725" elevation="3">

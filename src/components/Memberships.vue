@@ -27,7 +27,7 @@
           ></v-data-table>
 
           <v-card-actions class="pa-0">
-            <v-btn color="green lighten-2 white--text" tile block>
+            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary">
               Sign-up - Basic
             </v-btn>
           </v-card-actions>
@@ -58,7 +58,7 @@
           ></v-data-table>
 
           <v-card-actions class="pa-0">
-            <v-btn color="green lighten-2 white--text" tile block>
+            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary">
               Sign-up - Premium
             </v-btn>
           </v-card-actions>
@@ -88,7 +88,7 @@
           ></v-data-table>
 
           <v-card-actions class="pa-0">
-            <v-btn color="green lighten-2 white--text" tile block>
+            <v-btn color="green lighten-2 white--text" tile block to="/membership-order-summary">
               Sign-up - Elite
             </v-btn>
           </v-card-actions>

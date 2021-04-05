@@ -4,7 +4,7 @@
       <v-row align-content="center" justify="center">
         <v-col cols="4">
           <v-card class="pa-5">
-            <h2 class="mb-4">Heirlooms - Process</h2>
+            <h2 class="mb-4">What we do.</h2>
 
             <v-data-table
                 :headers="services_headers"
@@ -23,7 +23,7 @@
         <v-col cols="4">
           <v-card class="pa-5">
             <v-form>
-                <h2 class="mb-4">Heirlooms - Builder</h2>
+                <h2 class="mb-4">Heirlooms to Digitize.</h2>
 
                 <p class="red--text">
                   Note: The product is not added to the cart until the '+' button is clicked.

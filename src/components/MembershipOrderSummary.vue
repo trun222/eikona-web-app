@@ -1,16 +1,12 @@
 <template>
   <div class="membership-order-summary">
     <v-container class="mt-5">
-      <v-row class="my-4" justify="center">
-        <h1>Membership Checkout</h1>
-      </v-row>
-        
       <v-row class="my-2" justify="center">
         <v-col cols="3" md="6">
           <v-sheet color="rgba(209, 191, 183, 1)" elevation="3">
             <!-- Form For Account Creation -->
             <v-form class="pa-4">
-              <h2 class="mb-4">Account Creation</h2>
+              <h2 class="mb-4 white--text">Account Creation</h2>
               <v-row>
                 <v-col>
                   <v-text-field label="Username" prepend-inner-icon="mdi-account-box" solo></v-text-field>
@@ -47,7 +43,7 @@
           <v-sheet color="rgba(209, 191, 183, 1)" elevation="3">
             <!-- Form For Account Creation -->
             <v-form class="pa-4">
-              <h2 class="mb-4">Order Summary</h2>
+              <h2 class="mb-4 white--text">Order Summary</h2>
               <v-row>
                 <v-col>
                   <v-card
