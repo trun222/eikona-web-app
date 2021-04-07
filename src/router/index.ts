@@ -58,6 +58,14 @@ const routes: Array<RouteConfig> = [
       import(
         /* webpackChunkName: "HeirloomsBuilder.vue" */ "../components/Heirlooms/Builder.vue"
       ),
+  },
+    {
+    path: "/team-page",
+    name: "TeamPage",
+    component: () =>
+      import(
+        /* webpackChunkName: "TeamPage.vue" */ "../components/TeamPage.vue"
+      ),
   }
 ];
 
