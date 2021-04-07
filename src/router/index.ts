@@ -59,12 +59,20 @@ const routes: Array<RouteConfig> = [
         /* webpackChunkName: "HeirloomsBuilder.vue" */ "../components/Heirlooms/Builder.vue"
       ),
   },
-    {
+  {
     path: "/team-page",
     name: "TeamPage",
     component: () =>
       import(
         /* webpackChunkName: "TeamPage.vue" */ "../components/TeamPage.vue"
+      ),
+  },
+  {
+    path: "/about-us",
+    name: "AboutUs",
+    component: () =>
+      import(
+        /* webpackChunkName: "AboutUs.vue" */ "../components/AboutUs.vue"
       ),
   }
 ];

@@ -37,7 +37,7 @@ export default Vue.extend({
   src: url('./assets/fonts/Questrial/Questrial-Regular.ttf');
 }
   
-h1 {
+h1, p {
     font-family: primaryFont;
 }
 
