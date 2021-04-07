@@ -1,6 +1,6 @@
 <template>
   <div class="services eikona-company-gradient">
-    <v-row no-gutters>
+    <v-row class="membership-container" no-gutters>
       <v-col cols="6">
         <v-sheet class="heirlooms-section pa-5" color="rgba(226, 152, 134, 1)">
           <v-row class="title-container pt-5" justify="center">
@@ -77,10 +77,10 @@ export default Vue.extend({
 }
 
 .heirlooms-section {
-  height: 83vh;
+  height: 87.8vh;
 }
 
 .cloud-storage-section {
-  height: 83vh;
+  height: 87.8vh;
 }
 </style>

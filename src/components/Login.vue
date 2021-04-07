@@ -50,7 +50,7 @@ export default Vue.extend({
 }
 
 .login-container {
-  height: 83vh;
+  height: 87.4vh;
 }
 
 .match-parent-height { 

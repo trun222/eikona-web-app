@@ -9,7 +9,7 @@
         <v-col cols="4" md="8">
           <v-row align-content="center" justify="center">
             <v-col cols="6">
-              <v-card class="mx-2" max-height="550" height="450" width="500" to="/">
+              <v-card class="mx-2" max-height="550" height="450" width="500" to="/post">
                   <v-img
                     stretch
                     height="350"
@@ -22,7 +22,7 @@
               </v-card>
             </v-col>
             <v-col cols="6">
-              <v-card class="mx-2" max-height="550" height="450" width="500" to="/">
+              <v-card class="mx-2" max-height="550" height="450" width="500" to="/post">
                   <v-img
                     stretch
                     height="350"

@@ -16,8 +16,9 @@
           text
           rounded
           class="my-2"
+          :to="link.to"
         >
-          {{ link }}
+          {{ link.text }}
         </v-btn>
       </v-row>
     </v-footer>
@@ -34,11 +35,11 @@ export default Vue.extend({
 
   data: () => ({
     navLinks: [
-      'About Us',
-      'Team',
-      'Services',
-      'Blog',
-      'Contact Us',
+      { text: 'About Us', to: '/about-us' },
+      { text: 'Team', to: '/team-page' },
+      { text: 'Services', to: '/services' },
+      { text: 'Blog', to: '/blog' },
+      { text: 'Contact Us', to: '/contact-us' },
     ],
   }),
 });
