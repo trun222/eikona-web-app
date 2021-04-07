@@ -88,7 +88,15 @@ const routes: Array<RouteConfig> = [
     name: "Blog",
     component: () =>
       import(
-        /* webpackChunkName: "BLog.vue" */ "../components/Blog.vue"
+        /* webpackChunkName: "Blog.vue" */ "../components/Blog.vue"
+      ),
+  },
+  {
+    path: "/post",
+    name: "Post",
+    component: () =>
+      import(
+        /* webpackChunkName: "Post.vue" */ "../components/Post.vue"
       ),
   }
 ];

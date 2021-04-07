@@ -10,6 +10,12 @@ Vue.config.productionTip = false;
 
 Vue.component('visual', Visual)
 
+import VueSimpleMarkdown from 'vue-simple-markdown';
+import 'vue-simple-markdown/dist/vue-simple-markdown.css';
+
+
+Vue.use(VueSimpleMarkdown);
+
 new Vue({
   router,
   store,
