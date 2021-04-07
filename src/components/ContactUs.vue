@@ -10,7 +10,6 @@
           <v-form>
               <h2 class="mb-4 white--text default-letter-spacing">Your Email</h2>
               
-              
               <v-row align-content="center" justify="center">
                 <v-text-field solo>
 
@@ -21,9 +20,7 @@
 
               <!-- Message -->
               <v-row align-content="center" justify="center">
-                <v-textarea solo>
-                
-                </v-textarea>
+                <v-textarea solo no-resize></v-textarea>
               </v-row>
 
               <v-row>

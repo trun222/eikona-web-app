@@ -82,6 +82,14 @@ const routes: Array<RouteConfig> = [
       import(
         /* webpackChunkName: "ContactUs.vue" */ "../components/ContactUs.vue"
       ),
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: () =>
+      import(
+        /* webpackChunkName: "BLog.vue" */ "../components/Blog.vue"
+      ),
   }
 ];
 
