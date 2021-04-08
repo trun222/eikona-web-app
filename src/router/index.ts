@@ -20,6 +20,14 @@ const routes: Array<RouteConfig> = [
       ),
   },
   {
+    path: "/account",
+    name: "Account",
+    component: () =>
+      import(
+        /* webpackChunkName: "Account.vue" */ "../components/Account.vue"
+      ),
+  },
+  {
     path: "/services",
     name: "Services",
     component: () =>
