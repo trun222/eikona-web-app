@@ -18,10 +18,17 @@
             <v-icon class="yellow--text">mdi-star</v-icon>
 
             <v-card-actions>
-              <v-row class="mt-2" justify="center">
-                <v-btn color="rgba(209, 191, 183, 1)" dark depressed to="/settings">
-                  <v-icon class="mr-2">mdi-cog</v-icon> Settings
-                </v-btn>
+              <v-row justify="center">
+                <v-col>
+                  <v-btn color="warning" to="/memberships">
+                    Upgrade
+                  </v-btn>
+                </v-col>
+                <v-col>
+                  <v-btn color="rgba(209, 191, 183, 1)" dark depressed to="/settings">
+                    <v-icon class="mr-2">mdi-cog</v-icon> Settings
+                  </v-btn>
+                </v-col>
               </v-row>
             </v-card-actions>
           </v-card>

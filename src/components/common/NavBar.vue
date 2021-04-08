@@ -35,8 +35,12 @@
             @click="() => {}"
             :to="link.to"
           >
-            <v-list-item-title>
-            <v-icon>{{ link.icon}}</v-icon> {{ link.text }}
+            <v-list-item-title 
+              :class="{
+                'red--text': link.text === 'Logout',
+              }"
+            >
+            <v-icon :color="link.text === 'Logout' ? 'red' : 'grey'">{{ link.icon}}</v-icon> {{ link.text }}
             </v-list-item-title>
           </v-list-item>
         </v-list>
@@ -57,6 +61,7 @@ export default Vue.extend({
     navLinks: [
       { text: 'Home', icon: 'mdi-home-circle', to: '/'},
       { text: 'Login', icon: 'mdi-login-variant', to: '/login'},
+      { text: 'Logout', icon: 'mdi-logout', to: '/logout'},
       { text: 'Services', icon: 'mdi-hammer-wrench', to: '/services'},
       { text: 'Blog', icon: 'mdi-newspaper-variant', to: '/blog'},
       { text: 'About Us', icon: 'mdi-help', to: '/about-us'},
