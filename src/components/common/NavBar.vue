@@ -14,7 +14,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-menu
+      <!-- <v-menu
         left
         bottom
       >
@@ -44,7 +44,7 @@
             </v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
     </v-app-bar>
   </div>
 </template>

@@ -1,26 +1,32 @@
 <template>
   <div class="landing">
-    <visual 
+    <!-- <visual 
       class="ma-0 intro-video"
       ref='intro-video' 
       video='video.mp4' 
       autoload
       autoplay
       loop
-      width='100%' />
+      width='100%' /> -->
 
     <!-- Company Description Section -->
     <section class="ma-0 landing-section heirlooms-background">
       <v-row class="section-container" justify="center" no-gutters>
-        <v-col align-self="center" cols="6">
-          <h1 class="heirlooms-title text-center">Heirlooms</h1>
+        <v-col align-self="center" lg="6" md="6" sm="8" xs="10">
+          <h1  class="eikona-title text-center">EIKONA</h1>
+          <h1 class="heirlooms-title text-center mb-5">Coming Winter 2021</h1>
+          <v-row class="align-center">
+            <v-btn color="#e29886" class="ma-auto pa-auto white--text">
+              Visit our Kickstarter
+            </v-btn>
+          </v-row>
         </v-col>
       </v-row>
     </section>
     
 
     <!-- Heirlooms Service Brief Overview -->
-    <section class="ma-0 pa-3 landing-section heirlooms-section">
+    <!-- <section class="ma-0 pa-3 landing-section heirlooms-section">
       <v-row class="section-container" justify="center">
           <v-col cols="6" align-self="center">
             <v-row justify="center">
@@ -38,19 +44,19 @@
             ></v-img>
           </v-col>
       </v-row>
-    </section>
+    </section> -->
 
     <!-- Eikona Cloud Sync Description -->
-    <section class="ma-0 pa-3 landing-section cloud-storage-section">
+    <!-- <section class="ma-0 pa-3 landing-section cloud-storage-section">
       <v-row class="section-container" justify="center">
         <v-col align-self="center" cols="6">
           <h1 class="cloud-storage-title text-center">Private & Secure Cloud Storage</h1>
         </v-col>
       </v-row>
-    </section>
+    </section> -->
 
     <!-- Eikona Cloud Sync Brief Overview -->
-    <section class="ma-0 pa-3 landing-section cloud-storage-overview">
+    <!-- <section class="ma-0 pa-3 landing-section cloud-storage-overview">
       <v-row class="section-container" justify="center">
           <v-col class="ma-0 pa-0 description-image" cols="6">
             <v-img
@@ -68,21 +74,21 @@
             </v-row>
           </v-col>
       </v-row>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <eikona-footer></eikona-footer>
+    <!-- <eikona-footer></eikona-footer> -->
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import EikonaFooter from "./common/EikonaFooter.vue";
+// import EikonaFooter from "./common/EikonaFooter.vue";
 
 export default Vue.extend({
   name: "Landing",
 
-  components: {EikonaFooter},
+  // components: {EikonaFooter},
 
   data: () => ({
     navLinks: [
@@ -119,6 +125,8 @@ export default Vue.extend({
 }
 
 .heirlooms-background {
+  height: 100vh;
+  width: 100vw;
 	background: linear-gradient(-45deg, $color-background, $color-foreground, $color-accent1, $color-accent2, $color-accent3);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
@@ -134,6 +142,12 @@ export default Vue.extend({
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.eikona-title {
+  color: black;
+  font-size: 5em;
+  letter-spacing: 1rem;
 }
 
 .heirlooms-title {

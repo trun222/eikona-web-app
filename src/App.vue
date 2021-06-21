@@ -1,7 +1,7 @@
 <template>
   <v-app class="app">
     <!-- Nav Bar -->
-    <nav-bar></nav-bar>
+    <!-- <nav-bar></nav-bar> -->
 
     <v-main>
       <router-view></router-view>
@@ -11,12 +11,12 @@
 
 <script lang="ts">
 import Vue from "vue";
-import NavBar from "./components/common/NavBar.vue";
+// import NavBar from "./components/common/NavBar.vue";
 
 export default Vue.extend({
   name: "App",
 
-  components: {NavBar},
+  // components: {NavBar},
 
   data: () => ({
 
