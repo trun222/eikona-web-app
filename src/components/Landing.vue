@@ -15,9 +15,9 @@
         <v-col align-self="center" lg="6" md="6" sm="8" xs="10">
           <h1  class="eikona-title text-center">EIKONA</h1>
           <h1 class="heirlooms-title text-center mb-5">Coming Winter 2021</h1>
-          <v-row class="align-center my-3">
-            <v-icon class="ma-auto" x-large>mdi-android</v-icon>
-            <v-icon class="ma-auto" x-large>mdi-apple-ios</v-icon>
+          <v-row align-content="center" justify="center" class="my-5">
+            <font-awesome-icon size="2x" :icon="['fab', 'google-play']" />
+            <font-awesome-icon class="ml-5" size="2x" :icon="['fab', 'app-store-ios']" />
           </v-row>
           <v-row class="align-center">
             <v-btn color="#e29886" class="ma-auto pa-auto white--text">
