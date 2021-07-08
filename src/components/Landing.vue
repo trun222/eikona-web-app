@@ -20,7 +20,7 @@
             <font-awesome-icon class="ml-5" size="2x" :icon="['fab', 'app-store-ios']" />
           </v-row>
           <v-row class="align-center">
-            <v-btn color="#e29886" class="ma-auto pa-auto white--text">
+            <v-btn color="#e29886" class="ma-auto pa-auto white--text" href="https://www.kickstarter.com/projects/eikona/eikona" target="_blank">
               Visit our Kickstarter
             </v-btn>
           </v-row>
