@@ -1,7 +1,7 @@
 <template>
   <div class="File ma-2">
     <div>
-      <v-icon v-if="type === 'folder'" :class="iconColor">{{ icon }}</v-icon>
+      <v-icon v-if="type === 'folder'" :class="iconColor">mdi-folder</v-icon>
       <v-img v-if="type !== 'folder'" class="image mb-1" :src="src" aspect-ratio="16/9" max-width="150" contain eager/>
     </div>
     <div :class="{

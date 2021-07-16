@@ -9,37 +9,10 @@
         <v-col>
           <h1 class="ma-2">Files</h1>
 
-          <v-row>
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
+          <v-row> 
+            <file v-for="file in files" :key="file.name" :fileName="file.fileName" :src='file.src' :type="file.type" />   
           </v-row>
 
-
-          <v-row>
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-            <file type="folder" icon="mdi-folder" fileName="Wedding Photos 2019" />
-          </v-row>
-
-
-          <v-row>
-            <file fileName="Wedding Photos 2019" src='https://eikona-local.s3.us-west-000.backblazeb2.com/fake_file_name.jpg' />
-            <file fileName="Test.jpg" src='https://eikona-io.s3.us-west-000.backblazeb2.com/images/1005551_10208222644714595_3031512642463512854_n_10208222644714595.jpg' />
-            <file fileName="Test.pdf" src='https://eikona-local.s3.us-west-000.backblazeb2.com/test_pdf.png' />    
-            <file fileName="Document.docx" src='https://eikona-local.s3.us-west-000.backblazeb2.com/docx_test.png' />   
-          </v-row>
-
-          <v-row>
-            <file fileName="Excel.xlsx" src='https://eikona-local.s3.us-west-000.backblazeb2.com/xlsx_test.png' />
-          </v-row>
-  
         </v-col>
       </v-row>
     </v-container>
@@ -58,7 +31,38 @@ export default Vue.extend({
 
   components: {EikonaFooter, File},
 
-  data: () => ({}),
+  data: () => ({
+    files: [
+      {
+        type: 'folder',
+        fileName: 'Wedding Photos 2019',
+      }, 
+      {
+        type: 'folder',
+        fileName: 'Red River Gorge Photos 2019',
+      },
+      {
+        type: 'image/gif',
+        fileName: 'Test.gif',
+        src: 'https://eikona-local.s3.us-west-000.backblazeb2.com/fake_file_name.jpg'
+      },
+      {
+        type: 'file/pdf',
+        fileName: 'Test.pdf',
+        src: 'https://eikona-local.s3.us-west-000.backblazeb2.com/test_pdf.png'
+      },
+      {
+        type: 'file/docx',
+        fileName: 'Test.docx',
+        src: 'https://eikona-local.s3.us-west-000.backblazeb2.com/docx_test.png'
+      },
+      {
+        type: 'file/xlsx',
+        fileName: 'Test.xlxs',
+        src: 'https://eikona-local.s3.us-west-000.backblazeb2.com/xlsx_test.png'
+      }
+    ]
+  }),
   methods: {
     truncate(fileName: string): string {
       return fileName.length > 20 ? fileName.slice(0, 20) + '...' : fileName;
