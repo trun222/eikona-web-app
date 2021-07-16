@@ -1,5 +1,5 @@
 <template>
-  <div class="File ma-2">
+  <div class="File pa-3">
     <div>
       <v-icon v-if="type === 'folder'" :class="iconColor">mdi-folder</v-icon>
       <v-img v-if="type !== 'folder'" class="image mb-1" :src="src" aspect-ratio="16/9" max-width="150" contain eager/>
@@ -33,6 +33,10 @@ export default Vue.extend({
 
 .File {
   cursor: pointer;
+
+  &:hover {
+    background: #d3d3d3;
+  }
 
   .v-icon {
     font-size: 78px !important;

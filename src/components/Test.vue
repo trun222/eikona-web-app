@@ -1,10 +1,6 @@
 <template>
   <div class="eikona-company-gradient pa-4">
     <v-container class="pa-5">
-      <v-row justify="center">
-        <h1 class="my-3 white--text default-letter-spacing">Test</h1>
-      </v-row>
-
       <v-row class="bg pa-3">
         <v-col>
           <h1 class="ma-2">Files</h1>
