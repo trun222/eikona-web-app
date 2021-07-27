@@ -1,8 +1,8 @@
 <template>
   <div class="File pa-3">
     <div>
-      <v-icon v-if="type === 'folder'" :class="iconColor">mdi-folder</v-icon>
-      <v-img v-if="type !== 'folder'" class="image mb-1" :src="src" aspect-ratio="16/9" max-width="150" contain eager/>
+      <v-icon v-if="type === 'folder'" @click="$router.push({ name: 'FileView', params: { fileName, src, type }})"  :class="iconColor">mdi-folder</v-icon>
+      <v-img v-if="type !== 'folder'" @click="$router.push({ name: 'FileView', params: { fileName, src, type }})" class="image mb-1" :src="src" aspect-ratio="16/9" max-width="150" contain eager/>
     </div>
     <div :class="{
       compact: type === 'folder',

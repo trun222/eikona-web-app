@@ -6,14 +6,14 @@
           <h1 class="ma-2">Files</h1>
 
           <v-row> 
-            <file v-for="file in files" :key="file.name" :fileName="file.fileName" :src='file.src' :type="file.type" />   
+            <file v-for="file in files" :key="file.fileName" :fileName="file.fileName" :src='file.src' :type="file.type" />   
           </v-row>
 
         </v-col>
       </v-row>
     </v-container>
 
-    <eikona-footer></eikona-footer>
+    <!-- <eikona-footer></eikona-footer> -->
   </div>
 </template>
 
@@ -25,7 +25,7 @@ import File from "./common/File.vue";
 export default Vue.extend({
   name: "Test",
 
-  components: {EikonaFooter, File},
+  components: { File},
 
   data: () => ({
     files: [

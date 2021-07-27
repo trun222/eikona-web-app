@@ -11,12 +11,21 @@ const routes: Array<RouteConfig> = [
         /* webpackChunkName: "Landing.vue" */ "../components/Landing.vue"
       ),
   },
-    {
+  {
     path: "/test",
     name: "Test",
     component: () =>
       import(
-        /* webpackChunkName: ".vue" */ "../components/Test.vue"
+        /* webpackChunkName: "Test.vue" */ "../components/Test.vue"
+      ),
+  },
+  {
+    path: "/test/:fileName",
+    name: "FileView",
+    props: route => route.params,
+    component: () =>
+      import(
+        /* webpackChunkName: "FileView.vue" */ "../components/FileView.vue"
       ),
   },
   // {
