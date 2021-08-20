@@ -5,21 +5,58 @@
       padless
     >
       <v-row
+        align-items="center"
+        align-content="center"
         justify="center"
         no-gutters
       >
 
-        <v-btn
-          v-for="link in navLinks"
-          :key="link"
+        <!-- <v-btn
+          v-for="(link, index) in navLinks"
+          :key="link+index"
           color="white"
           text
           rounded
           class="my-2"
-          :to="link.to"
+          :href="link.to"
         >
           {{ link.text }}
-        </v-btn>
+        </v-btn> -->
+        <v-btn
+            class="my-2"
+              icon
+              color="black"
+              href="mailto:eikona@protonmail.com"
+              target="_blank"
+            >
+              <v-icon size="28">mdi-email</v-icon>
+            </v-btn>
+          <v-btn
+            class="my-2"
+              icon
+              color="black"
+              href="https://www.facebook.com/eikonadigital"
+              target="_blank"
+            >
+              <v-icon size="28">mdi-facebook</v-icon>
+            </v-btn>
+            <v-btn
+              class="my-2"
+              icon
+              color="black"
+              href="https://www.instagram.com/eikonadigitalservicesllc/"
+              target="_blank"
+            >
+              <v-icon size="28">mdi-instagram</v-icon>
+            </v-btn>
+            <v-btn
+              class="my-2"
+              icon
+              href="https://www.tiktok.com/@eikonadigitalservicesllc?lang=en"
+              target="_blank"
+            >
+              <v-img src="@/assets/tiktok.svg" height="28" width="28" />
+            </v-btn>
       </v-row>
     </v-footer>
   </div>
@@ -35,11 +72,11 @@ export default Vue.extend({
 
   data: () => ({
     navLinks: [
-      { text: 'About Us', to: '/about-us' },
-      { text: 'Team', to: '/team-page' },
-      { text: 'Services', to: '/services' },
-      { text: 'Blog', to: '/blog' },
-      { text: 'Contact Us', to: '/contact-us' },
+      // { text: 'About Us', to: '/about-us' },
+      // { text: 'Team', to: '/team-page' },
+      // { text: 'Services', to: '/services' },
+      // { text: 'Blog', to: '/blog' },
+      { text: 'Contact Us', to: 'mailto:eikona@protonmail.com' },
     ],
   }),
 });

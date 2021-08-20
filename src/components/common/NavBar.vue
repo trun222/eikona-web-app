@@ -1,16 +1,14 @@
 <template>
   <div class="nav-bar">
-    <v-app-bar app class="eikona-company-gradient">
+    <v-app-bar app absolute class="eikona-company-gradient">
       <v-spacer></v-spacer>
 
-      <div class="d-flex align-center">
         <v-img
           contain
-          height="100"
-          width="250"
-          :src="require('@/assets/eikona-branding.png')"
+          height="275"
+          width="550"
+          :src="require('@/assets/eikona_black.png')"
         />
-      </div>
 
       <v-spacer></v-spacer>
 
