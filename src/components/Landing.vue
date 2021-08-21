@@ -4,8 +4,8 @@
             class="ma-0 intro-video"
             ref="intro-video"
             video="https://f000.backblazeb2.com/file/eikona-io/www.eikona.io/Eikona_Ad.mp4"
-            autoload
-            autoplay
+            lazyload
+            controls
             width="100%"
         />
 
